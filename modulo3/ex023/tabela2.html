@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela 2</title>
+    <title>Classificação do Brasileirão Série A 2025</title>
     <style>
         * {
             margin: 0;
@@ -16,10 +16,29 @@
             border-collapse: collapse;
             margin: 20px auto;
             width: 400px;
+
+            position: relative; /* para fixar thead */
+        }
+        caption {
+            font-size: 1.3em;
+            background-color: greenyellow;
+            padding: 5px;
+            border: 1px solid black;
         }
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+        thead > tr > th {
+            /* para fixar thead */
+            position: sticky; 
+            top: 0;
+            background-color: grey;
+        }
+        tbody > tr:nth-child(2n){ /* 2n ou even (par); odd (ímpar) */
+            background-color: lightgray;
+
+            /* DICA: (-n+3) aplica a todos os 3 primeiros elementos filho */
         }
         th {
             border: 1px solid black;
@@ -46,6 +65,9 @@
             background-image: linear-gradient(to left, #0e035e, blue);
             color: white;
         }
+        .nd {
+            background-color: white;
+        }
         .z4 {
             background-color: rgb(247, 89, 89);
             color: white;
@@ -56,6 +78,7 @@
     <!-- 
         ANATOMIA DA TABELA
             TABLE
+                CAPTION
                 THEAD
                     TR, TD, TH
                 TBODY (único obrigatório)
@@ -64,12 +87,14 @@
                     TR, TD, TH
     -->
     <table>
+        <caption>Classificação BR25</caption>
         <thead>
             <tr>
-                <th class="pos-head">Pos</th>
-                <th>Time</th>
-                <th>Pts</th>
-                <th>VIT</th>
+                <!-- 'col' quando o conteúdo do título está na mesma coluna. 'row' é quando o conteúo está na mesma linha -->
+                <th scope="col" class="pos-head">Pos</th>
+                <th scope="col">Time</th>
+                <th scope="col">Pts</th>
+                <th scope="col">VIT</th>
             </tr>
         </thead>
         <tbody>
@@ -158,13 +183,13 @@
                 <td class="num">13</td>
             </tr>
             <tr>
-                <td class="pos">15</td>
+                <td class="pos nd">15</td>
                 <td>EC Vitória</td>
                 <td class="num">45</td>
                 <td class="num">11</td>
             </tr>
             <tr>
-                <td class="pos">16</td>
+                <td class="pos nd">16</td>
                 <td>Internacional</td>
                 <td class="num">44</td>
                 <td class="num">11</td>
