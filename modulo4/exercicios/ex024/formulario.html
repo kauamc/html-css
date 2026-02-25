@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastre-se e receba uma newsletter toda semana</h1>
+    <form action="cadastro" name="cadastro">
+        <p>Nome: <input type="text" name="Nome" id="nome"></p>
+        <p>E-mail: <input type="email" name="email" id="email"></p>
+        <input type="button" value="Cadastrar">
+    </form>
+    <h1>Script</h1>
+    <p><a href="#" onclick="clique()">Clique em mim</a></p>
+    <div id="area"></div>
+    
+    <script>
+        function clique(){
+            var n = window.document.getElementById("area")
+            n.innerHTML += "<p>Você clicou</p>"
+        }
+    </script>
+</body>
+</html>
