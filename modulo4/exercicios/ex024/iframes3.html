@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes 3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+
+        iframe {
+            border: 2px solid black;
+            display: block;
+            margin: 20px auto;
+            width: 1000px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha uma página abaixo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quaerat tempore quas quos delectus molestiae ea, commodi sequi esse blanditiis, mollitia fugiat, atque dolores! Sed iste rem eos magni voluptatibus.</p>
+    <ul>
+        <li><a href="https://kauamc.github.io/projeto-android/" target="frame">Projeto Android</a></li>
+        <li><a href="https://kauamc.github.io/projeto-cordel/" target="frame">Projeto Cordel</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti earum laudantium aspernatur minima ullam ex, accusamus laborum voluptatibus tempora inventore nostrum. Numquam quam odit cum. Corrupti corporis nostrum dolorem.</p>
+    <iframe srcdoc="<h1>Selecione uma das opções acima</h1>" frameborder="0" name="frame"></iframe>
+</body>
+</html>
