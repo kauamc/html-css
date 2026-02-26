@@ -24,6 +24,7 @@ section#celular {
     width: 90vw;
     height: 100vh;
     background-color: azure;
+
 }
 
 #celular iframe {
@@ -32,7 +33,12 @@ section#celular {
     display: block;
     margin: auto;
     
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.414);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 aside#botoes {
