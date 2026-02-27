@@ -11,9 +11,10 @@
 }
 
 body {
-    background-image: radial-gradient(circle, black, #595858);
+    background-image: radial-gradient(circle, black, #505050);
     font-family: var(--fonte-geral);
-    overflow: hidden;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 main {
@@ -23,11 +24,16 @@ main {
 section#celular {
     width: 90vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;  /* centraliza horizontalmente */
+    align-items: center;
 }
 
 #celular iframe {
     width: 360px;
     height: 640px;
+    border: 20px solid rgb(222, 222, 222);
+    border-radius: 30px;
     display: block;
     margin: auto;   
     position: absolute;
