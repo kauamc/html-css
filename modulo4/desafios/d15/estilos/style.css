@@ -57,6 +57,11 @@ aside#botoes a {
 
 aside#botoes a:hover {
     transform: scale(1.1);
+    transition: transform .5s;
+}
+
+aside#botoes a:active {
+    transform: scale(95%);
 }
 
 #inicio {
