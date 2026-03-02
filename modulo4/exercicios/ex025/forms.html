@@ -6,10 +6,11 @@
     <title>Formulário 1</title>
 </head>
 <body>
-    <form>
-        <p>Nome: <input type="text" name="Nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="Sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- get é o método padrão que não esconde as informações na URL. Post oculta, mas não quer dizer que é mais seguro. Get não pode receber mais de 3.000 bytes de tamanho (cerca de 3.000 letras) -->
+        <p><label for="inome">Nome: </label><input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome: </label><input type="text" name="Sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
+        <!-- name e id podem ser iguais -->
     </form>
 </body>
 </html>
