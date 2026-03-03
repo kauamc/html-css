@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 6</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="icor">Cor desejada</label>
+        <input type="color" name="Cor" id="icor" value="#ffffff"><br>
+
+        <label for="isat">Nível de satisfação</label>
+        <input type="range" name="sat" id="isat" min="1" max="5" value="5"> <br>
+
+        <label for="ifoto">Foto de perfil</label>
+        <input type="file" name="foto" id="ifoto">
+        <!-- É necessário usar o método 'post' para o tipo file devido ao tamanho do arquivo (get aguenta no máximo 3.000 bytes) -->
+    </form>
+</body>
+</html>
