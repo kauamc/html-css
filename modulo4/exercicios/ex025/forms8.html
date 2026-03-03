@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 8</title>
+</head>
+<body>
+    <form action="">
+        <label for="in1">Valor 1: </label>
+        <input type="number" name="n1" id="in1" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+        <label for="in2">Valor 2: </label>
+        <input type="number" name="n2" id="in2" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <input type="submit" value="Somar" onclick="res()">
+
+        <p id="reshtml"></p>
+        <br><br><br>
+
+        <label for="ibarra">Selecione um número entre 0 e 10</label>
+        <input type="range" name="barra" id="ibarra" min="0" max="10" value="0" oninput="numbarra.innerHTML = Number(ibarra.value)">
+        <output id="numbarra">0</output>
+        <br><br><br>
+
+        <label for="iidade">Ano em que você nasceu: </label>
+        <input type="number" name="idade" id="iidade" min="1900" max="2026" value="2000" oninput="usuidade.innerHTML = 2026 - iidade.value">
+        <output id="usuidade">26</output>
+    </form>
+    <script>
+        function res(){
+            var p = document.getElementById("reshtml")
+
+            var v1 = document.getElementById('in1')
+            var v1n = Number(v1.value)
+
+            var v2 = document.getElementById('in2')
+            var v2n = Number(v2.value)
+
+            alert(v1n + v2n)
+        }
+    </script>
+</body>
+</html>
