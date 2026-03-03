@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 5</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!-- Tem que ter o mesmo name -->
+            <input type="radio" name="sexo" id="isexomasculino" value="M">
+            <label for="isexomasculino">Masculino</label>
+
+            <input type="radio" name="sexo" id="isexofeminino" value="F">
+            <label for="isexofeminino">Feminino</label>
+
+            <input type="radio" name="sexo" id="isexooculto" value="PNR">
+            <label for="isexooculto">Prefiro não responder</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked> 
+            <label for="iesfut">Futebol</label>
+
+            <input type="checkbox" name="esvol" id="iesvol"> 
+            <label for="iesvol">Vôlei</label>
+
+            <input type="checkbox" name="esf1" id="iesf1">
+            <label for="iesf1">Formula 1</label>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar informações">
+        </div>
+    </form>
+</body>
+</html>
