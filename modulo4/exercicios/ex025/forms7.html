@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 7</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="iestado">UF de nascimento</label>
+        <select name="estado" id="iestado" required>
+            <option value="" selected disabled>--- Selecione ---</option>
+            <optgroup label="Região Sudeste">
+                <option value="RJ">RJ</option>
+                <option value="SP">SP</option>
+                <option value="ES">ES</option>
+                <option value="MG">MG</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option value="PR">PR</option>
+                <option value="SC">SC</option>
+                <option value="RS">RS</option>
+            </optgroup>
+        </select>
+        
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="profissoes">
+        <datalist id="profissoes">
+            <option value="pPROF">Professor</option>
+            <option value="pMED">Médico</option>
+            <option>Porteiro</option>
+            <option>Eletricista</option>
+        </datalist><br>
+
+        <label for="imsg">Mensagem</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
