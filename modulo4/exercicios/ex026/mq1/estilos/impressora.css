@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Estilo para impressão */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+}
+
+nav {
+    display: none;
+}
+
+article::after {
+    content: 'Esse site foi impresso e possui um CSS exclusivo';
+}
