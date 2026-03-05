@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* Retrato */
+
+body {
+    background-image: url(../../pacote-imagens-cap25/imagens/cev-portrait.jpg); 
+    background-position: center bottom;
+}
+
+h1 {
+    color: black;
+}
