@@ -27,17 +27,22 @@ header {
         padding-bottom: 10px;
     }
 
-    header nav {
-        
+    header #menu-burger {
+        background-color: rgb(79, 79, 79);
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #menu-burger:hover {
+        background-color: rgb(57, 56, 56);
+        cursor: pointer;
     }
 
     header ul {
-        display: block;
+        display: none;
         list-style-type: none;
-    }
-
-    header li {
-        
     }
 
     header li > a {
