@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mq.css">
 </head>
-<body>
+<body onresize="widthCheck()">
     <header>
         <h1>Meu site</h1>
         <p>Artigos e notícias</p>
@@ -32,6 +32,13 @@
         </article>
     </main>
     <script>
+        function widthCheck(){
+            if(window.innerWidth >= 768){
+                menu.style.display = "block"
+            } else {
+                menu.style.display = 'none'
+            }
+        }
         function abrirMenu(){
             let lista = document.getElementById('menu')
             if(lista.style.display == 'none'){

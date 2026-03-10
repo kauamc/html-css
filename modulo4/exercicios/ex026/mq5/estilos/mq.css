@@ -17,7 +17,7 @@ Grandes telas: acima de 1200px
         display: none;
     }
     #menu {
-        display: block !important;
+        display: block;
     }
     nav {
         background-color: rgb(79, 79, 79);
