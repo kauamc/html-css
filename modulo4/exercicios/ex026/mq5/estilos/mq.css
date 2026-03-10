@@ -19,6 +19,9 @@ Grandes telas: acima de 1200px
     #menu {
         display: block !important;
     }
+    nav {
+        background-color: rgb(79, 79, 79);
+    }
     nav > ul > li {
         display: inline-block;
         padding: 5px;
