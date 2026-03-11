@@ -1,2 +1,78 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#img, #login {
+    display: block;
+    margin: auto;
+}
+
+#img {
+    background-color: aquamarine;
+    background-image: url(../imagens/img-login.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+}
+
+#login {
+    background-color: lightgrey;
+    width: 300px;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+}
+
+#login h1 {
+    text-align: center;
+    padding: 0 0 10px 0;
+    font-size: 2em;
+}
+
+#login p {
+    padding: 0 0 10px 0;
+}
+
+form > div {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+label > img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+div > #email, div > #senha, .botao > input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.cadastrar-opt {
+    justify-content: center;
+}
+
+.cadastrar-opt > a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: black;
+}
