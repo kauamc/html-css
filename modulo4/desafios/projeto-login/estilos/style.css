@@ -51,6 +51,8 @@ section {
     padding: 10px;
 
     height: 350px;
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 
 #login h1 {
