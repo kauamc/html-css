@@ -85,7 +85,7 @@ label > img {
     margin-right: 5px;
 }
 
-div > #email, div > #senha, .botao > input {
+div > #email, div > #senha, .botao > input, #rec-senha {
     width: 100%;
     padding: 5px;
     border-radius: 10px;
@@ -108,15 +108,16 @@ div > #email, div > #senha {
     background-color: #c2b84a;
 }
 
-#rec-senha:hover {
-    background-color: var(--amarelo);
-    color: black;
-}
-
 #rec-senha {
     border: 3px solid var(--amarelo);
     background-color: transparent;
     color: var(--amarelo);
+    text-align: center;
+}
+
+#rec-senha:hover {
+    background-color: var(--amarelo);
+    color: black;
 }
 
 .cadastrar-opt {

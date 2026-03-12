@@ -13,20 +13,20 @@
         <div id="login">
             <h1>Login</h1>
             <p>É bom te ver de volta! Faça login para aproveitar o máximo.</p>
-            <form action="login.php" method="post">
+            <form action="login.php" method="post" autocomplete="on">
                 <div class="input-per">
                     <label for="email"><img src="imagens/email.png" alt=""></label>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
                 </div>
                 <div class="input-per">
                     <label for="senha"><img src="imagens/senha.png" alt=""></label>
-                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
                 </div>
                 <div class="botao">
                     <input id="enviar-btn" type="submit" value="Entrar">
                 </div>
                 <div class="botao">
-                    <input id="rec-senha" type="button" value="Esqueci a senha">
+                    <a href="#" id="rec-senha">Esqueci a senha</a>
                 </div>
                 <div class="cadastrar-opt">
                     <a href="#">Criar uma conta</a>
