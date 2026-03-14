@@ -13,12 +13,26 @@
                                     - row-reverse (direita para esquerda)
                                     - Column (cima para baixo) e
                                     - column-reverse: baixo para cima (automaticamente em idiomas que lê assim) */
+            flex-wrap: wrap;
+            /* flex-flow: row wrap; - Junção de flex-direction com flex-wrap (como shorthand) e é recomendado*/
+            margin-bottom: 40px;
         }
         .item {
             background-color: cadetblue;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
+            font-size: 1.5em;
+        }
+
+        .container2 {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            height: 260px;
         }
     </style>
 </head>
@@ -29,6 +43,14 @@
         <div class="item">C</div>
         <div class="item">D</div>
         <div class="item">E</div>
+    </div>
+
+    <div class="container2">
+        <div class="item">Bloco do item A</div>
+        <div class="item">Bloco do item B</div>
+        <div class="item">Bloco do item C</div>
+        <div class="item">Bloco do item D</div>
+        <div class="item">Bloco do item E</div>
     </div>
 </body>
 </html>
