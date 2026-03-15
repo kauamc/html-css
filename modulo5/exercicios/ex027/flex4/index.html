@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --valor: 200px;
+        }
+
+        .container {
+            background-color: aquamarine;
+            height: 300px;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start; /* stretch é o padrão (esticar) */
+        }
+        .item {
+            background-color: rgb(238, 161, 255);
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        #item {
+            background-color: burlywood;
+            width: var(--valor);
+            height: calc(var(--valor) * 2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+    <div id="item"></div>
+</body>
+</html>
