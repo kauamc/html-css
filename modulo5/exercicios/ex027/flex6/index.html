@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 900px;
+            height: 700px;
+            background-color: aqua;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly
+        }
+        .bloco {
+            padding: 100px;
+            background-color: rebeccapurple;
+            border: 3px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bloco">A</div>
+        <div class="bloco">B</div>
+        <div class="bloco">C</div>
+        <div class="bloco">D</div>
+    </div>
+</body>
+</html>
