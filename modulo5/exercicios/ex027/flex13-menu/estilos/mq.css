@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 460px){
+    header {
+        display: block;
+        flex-flow: row wrap;
+        
+    }
+    header nav {
+        display: flex;
+        flex: auto;
+        justify-content: flex-start;
+    }
+    header li {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 651px){
+    header {
+        display: flex;
+        align-items: center;
+    }
+    header nav {
+        justify-content: flex-end;
+    }
+
+}
