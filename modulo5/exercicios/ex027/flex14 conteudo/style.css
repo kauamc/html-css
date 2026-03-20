@@ -33,9 +33,27 @@ section {
 }
 
 /* img */
-#media-text > div:nth-child(1) {}
+#media-text > div:nth-child(1) {
+    flex: 1 0 400px;
+}
+
+#media-text img {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
 
 /* texto */
 #media-text > div:nth-child(2), #text-media > div:nth-child(1) {
     flex: 1 1 500px;
+}
+
+#text-media > div:nth-child(2) {
+    flex: 1 1 400px;
+}
+
+#text-media iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
 }
