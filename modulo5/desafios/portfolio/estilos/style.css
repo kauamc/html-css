@@ -19,12 +19,59 @@ body {
 }
 
 header, main, aside, footer {
-    border: 1px solid black;
+    border: 1px solid rgb(138, 138, 138);
 }
 
 header {
     width: 100%;
     margin-bottom: 15px;
+    background-color: grey;
+}
+
+header nav {
+    padding: 15px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+header a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}
+
+header a:hover {
+    transform: scale(120%);
+}
+
+header a:active {
+    transform: scale(90%);
+}
+
+a#inicio-btn {
+    background-image: url(../icones/inicio.png);
+}
+
+a#soft-skills-btn {
+    background-image: url(../icones/soft-skills.png);
+}
+
+a#hard-skills-btn {
+    background-image: url(../icones/hard-skills.png);
+}
+
+a#projetos-btn {
+    background-image: url(../icones/projetos.png);
+}
+
+a#tema-btn {
+    background-image: url(../icones/tema-escuro.png);
 }
 
 main {
