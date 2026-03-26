@@ -1,25 +1,27 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
 }
 
 body {
     width: 100%;
-    height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+p {
+    font-size: 1em;
 }
 
 .container {
     display: grid;
     height: 100%;
-    grid-template: 1fr 1fr / 0 1fr 0;
+    grid-template: auto auto / 0 1fr 0;
     gap: 15px;
-}
-
-header, main, aside, footer {
-    border: 1px solid rgb(138, 138, 138);
 }
 
 header {
@@ -74,16 +76,114 @@ a#tema-btn {
     background-image: url(../icones/tema-escuro.png);
 }
 
+.caixa {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.26);
+    padding: 15px;
+    margin: 0 0 15px 0;
+}
+
+.caixa h2 {
+    margin-bottom: 5px;
+}
+
 main {
     grid-area: 2 / 2;
+}
+
+.section-sobre-mim p:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+div.curso, div.projeto {
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border-left: 3px solid black;
+    border-radius: 10px;
+    transition: border-left .5s;
+}
+
+div.curso:hover, div.projeto:hover {
+    border-left: 8px solid black;
+}
+
+.curso-ano, .projeto-ano {
+    font-size: 1em;
+    color: rgb(114, 114, 114);
+}
+
+.curso-instituicao, .projeto-nome {
+    font-size: 1.1em;
+}
+
+.curso-nome, .projeto-detalhes {
+    font-size: 1em;
+}
+
+.projet0-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+aside img {
+    width: 50%;
+    max-width: 200px;
+    padding: 5px;
+    align-self: center;
+    border: 7px solid grey;
+    border-radius: 50%;
+}
+
+aside h1 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+aside ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+aside a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}
+
+a#github-btn {
+    background-image: url(../icones/github.png);
+}
+
+a#linkedin-btn {
+    background-image: url(../icones/linkedin.png);
+}
+
+a#instagram-btn {
+    background-image: url(../icones/instagram.png);
 }
 
 aside {
     grid-area: 1 / 2;
 }
 
+.perfil {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
 footer {
     width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 15px;
     margin-top: 15px;
+    text-align: center;
 }
 
