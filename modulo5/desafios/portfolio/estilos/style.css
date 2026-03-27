@@ -8,6 +8,10 @@
     font-family: 'Lexend', Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-padding-top: 70px;
+}
+
 body {
     width: 100%;
     background-color: rgb(240, 240, 240);
@@ -28,6 +32,10 @@ header {
     width: 100%;
     margin-bottom: 15px;
     background-color: grey;
+    position: sticky;
+    top: 0;
+    left: 0;
+
 }
 
 header nav {
