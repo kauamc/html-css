@@ -10,6 +10,10 @@ main {
     grid-area: 1 / 3 / 2 / -2;
 }
 
+.section-soft-skills ul {
+    columns: 2;
+}
+
 .projeto {
     display: flex;
     flex-flow: row-reverse;

@@ -76,6 +76,12 @@ a#tema-btn {
     background-image: url(../icones/tema-escuro.png);
 }
 
+/* Main */
+
+main {
+    grid-area: 2 / 2;
+}
+
 .caixa {
     background-color: white;
     border-radius: 15px;
@@ -88,12 +94,41 @@ a#tema-btn {
     margin-bottom: 5px;
 }
 
-main {
-    grid-area: 2 / 2;
-}
-
 .section-sobre-mim p:nth-child(2) {
     margin-bottom: 10px;
+}
+
+section.section-soft-skills .soft-skill {
+    margin-bottom: 10px;
+}
+
+.section-soft-skills ul {
+    list-style: none;
+}
+
+.info-skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.barra, .barra-progresso {
+    border-radius: 15px;
+}
+
+.barra {
+    width: 100%;
+    height: 8px;
+    background-color: lightgrey;
+}
+
+.barra-progresso {
+    height: 100%;
+    background-color: black;
+}
+
+.barra-progresso:hover {
+    background-color: grey;
 }
 
 div.curso, div.projeto {
