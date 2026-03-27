@@ -102,8 +102,24 @@ main {
     margin-bottom: 5px;
 }
 
+.caixa h2::before {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 .section-sobre-mim p:nth-child(2) {
     margin-bottom: 10px;
+}
+
+.section-sobre-mim h2::before {
+    content: url(../icones/section-icon-sobre-mim.png);
+}
+
+/* Section soft skill */
+
+.section-soft-skills h2::before {
+    content: url(../icones/section-icon-soft-skill.png);
 }
 
 section.section-soft-skills .soft-skill {
@@ -135,8 +151,10 @@ section.section-soft-skills .soft-skill {
     background-color: black;
 }
 
-.barra-progresso:hover {
-    background-color: grey;
+/* Section hard-skills */
+
+.section-hard-skills h2::before {
+    content: url(../icones/section-icon-hard-skills.png);
 }
 
 div.curso, div.projeto {
@@ -165,12 +183,58 @@ div.curso:hover, div.projeto:hover {
     font-size: 1em;
 }
 
+/* Section projetos */
+
+.section-projetos h2::before {
+    content: url(../icones/section-icon-projetos.png);
+}
+
 .projeto-img {
     display: block;
     width: 100%;
     border-radius: 10px;
     margin-bottom: 5px;
 }
+
+details summary{
+    cursor: pointer;
+}
+
+details p {
+    margin-left: 1em;
+}
+
+details::details-content {
+    transition: all 0.8s;
+    opacity: 0;
+    block-size: 0;
+}
+
+details[open]::details-content {
+    opacity: 1;
+    block-size: auto;
+}
+
+.detalhes-projeto {
+    margin-top: 1em;
+}
+
+.detalhes-projeto a {
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    margin-top: 1em;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color .3s ease;
+}
+
+.detalhes-projeto a:hover {
+    background-color: black;
+}
+
+/* Aside */
 
 aside img {
     width: 50%;
@@ -231,4 +295,3 @@ footer {
     margin-top: 15px;
     text-align: center;
 }
-
