@@ -108,8 +108,10 @@ main {
     vertical-align: middle;
 }
 
+/* Sobre mim */
+
 .section-sobre-mim p:nth-child(2) {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 .section-sobre-mim h2::before {
@@ -263,6 +265,11 @@ aside a {
     width: 30px;
     height: 30px;
     background-size: contain;
+    transition: opacity 0.5s;
+}
+
+aside a:hover {
+    opacity: 0.6;
 }
 
 a#github-btn {
