@@ -238,6 +238,16 @@ details[open]::details-content {
 
 /* Aside */
 
+aside {
+    grid-area: 1 / 2;
+}
+
+.perfil {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
 aside img {
     width: 50%;
     max-width: 200px;
@@ -282,16 +292,6 @@ a#linkedin-btn {
 
 a#instagram-btn {
     background-image: url(../icones/instagram.png);
-}
-
-aside {
-    grid-area: 1 / 2;
-}
-
-.perfil {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
 }
 
 footer {
