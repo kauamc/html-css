@@ -110,8 +110,12 @@ main {
 
 /* Sobre mim */
 
-.section-sobre-mim p:nth-child(2) {
+.section-sobre-mim p {
     margin-bottom: 1em;
+}
+
+.section-sobre-mim p:last-child {
+    margin-bottom: 0;
 }
 
 .section-sobre-mim h2::before {
@@ -130,6 +134,10 @@ section.section-soft-skills .soft-skill {
 
 .section-soft-skills ul {
     list-style: none;
+}
+
+.section-soft-skills li {
+    break-inside: avoid;
 }
 
 .info-skill {
@@ -202,8 +210,12 @@ details summary{
     cursor: pointer;
 }
 
-details p {
+details p, details a {
     margin-left: 1em;
+}
+
+details:last-child {
+    margin-bottom: 5px;
 }
 
 details::details-content {
@@ -248,6 +260,10 @@ aside {
     align-content: center;
 }
 
+.perfil p {
+    margin: 1em 0 1em 0;
+}
+
 aside img {
     width: 50%;
     max-width: 200px;
@@ -259,7 +275,7 @@ aside img {
 
 aside h1 {
     font-size: 1.5em;
-    margin: 15px 0;
+    margin-top: 0.5em;
 }
 
 aside ul {
