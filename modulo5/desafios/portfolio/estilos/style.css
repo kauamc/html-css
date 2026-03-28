@@ -132,6 +132,7 @@ main {
 
 .section-sobre-mim p {
     margin-bottom: 1em;
+    text-align: justify;
 }
 
 .section-sobre-mim p:last-child {
@@ -173,7 +174,7 @@ section.section-soft-skills .soft-skill {
 .barra {
     width: 100%;
     height: 8px;
-    background-color: lightgrey;
+    background-color: var(--fundo-pagina);
 }
 
 .barra-progresso {
@@ -223,6 +224,7 @@ div.curso:hover, div.projeto:hover {
 
 details summary{
     cursor: pointer;
+    color: var(--titulo-cor);
 }
 
 details p, details a {
@@ -250,7 +252,7 @@ details[open]::details-content {
 
 .detalhes-projeto a {
     display: inline-block;
-    background-color: grey;
+    background-color: var(--cor-secundaria);
     color: white;
     padding: 10px;
     margin-top: 1em;
@@ -260,7 +262,7 @@ details[open]::details-content {
 }
 
 .detalhes-projeto a:hover {
-    background-color: black;
+    background-color: var(--cor-primaria);
 }
 
 /* Aside */
@@ -280,11 +282,11 @@ aside {
 }
 
 aside img {
-    width: 50%;
+    width: 70%;
     max-width: 200px;
     padding: 5px;
     align-self: center;
-    border: 7px solid var(--cor-secundaria);
+    border: 5px solid var(--cor-secundaria);
     border-radius: 50%;
 }
 
