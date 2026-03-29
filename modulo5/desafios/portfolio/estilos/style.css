@@ -25,6 +25,9 @@
     --h1-tamanho: 1.5em;
     --h2-tamanho: 1.2em;
     --texto-tamanho: 1em;
+
+    --header-icones: white;
+    --aside-icones: var(--cor-secundaria);
 }
 
 html {
@@ -71,9 +74,6 @@ header ul {
 
 header a {
     display: block;
-    width: 30px;
-    height: 30px;
-    background-size: contain;
 }
 
 header a:hover {
@@ -84,24 +84,9 @@ header a:active {
     transform: scale(90%);
 }
 
-a#inicio-btn {
-    background-image: url(../icones/inicio.png);
-}
-
-a#soft-skills-btn {
-    background-image: url(../icones/soft-skills.png);
-}
-
-a#hard-skills-btn {
-    background-image: url(../icones/hard-skills.png);
-}
-
-a#projetos-btn {
-    background-image: url(../icones/projetos.png);
-}
-
-a#tema-btn {
-    background-image: url(../icones/tema-escuro.png);
+header i.material-icons {
+    font-size: 1.8em;
+    color: var(--header-icones);
 }
 
 /* Main */
@@ -119,13 +104,18 @@ main {
 }
 
 .caixa h2 {
+    display: inline-flex;
+    align-items: center;
     margin-bottom: 5px;
 }
 
-.caixa h2::before {
-    display: inline-block;
-    margin-right: 8px;
-    vertical-align: middle;
+.caixa h2 > i {
+    line-height: 0;
+}
+
+.caixa .fi, .caixa .material-icons{
+    font-size: 1.5em;
+    margin-right: 5px;
 }
 
 /* Sobre mim */
@@ -137,16 +127,6 @@ main {
 
 .section-sobre-mim p:last-child {
     margin-bottom: 0;
-}
-
-.section-sobre-mim h2::before {
-    content: url(../icones/section-icon-sobre-mim.png);
-}
-
-/* Section soft skill */
-
-.section-soft-skills h2::before {
-    content: url(../icones/section-icon-soft-skill.png);
 }
 
 section.section-soft-skills .soft-skill {
@@ -182,12 +162,6 @@ section.section-soft-skills .soft-skill {
     background-color: var(--cor-secundaria);
 }
 
-/* Section hard-skills */
-
-.section-hard-skills h2::before {
-    content: url(../icones/section-icon-hard-skills.png);
-}
-
 div.curso, div.projeto {
     background-color: rgb(233, 233, 233);
     padding: 10px;
@@ -207,12 +181,6 @@ div.curso:hover, div.projeto:hover {
 
 .curso-instituicao, .projeto-nome {
     font-size: 1.1em;
-}
-
-/* Section projetos */
-
-.section-projetos h2::before {
-    content: url(../icones/section-icon-projetos.png);
 }
 
 .projeto-img {
@@ -304,18 +272,19 @@ aside ul {
 
 aside a {
     display: block;
-    width: 30px;
-    height: 30px;
+    color: var(--aside-icones);
+    text-decoration: none;
+    font-size: 1.2em;
     background-size: contain;
     transition: opacity 0.5s;
 }
 
-aside a:hover {
-    opacity: 0.6;
+aside a:visited {
+    text-decoration: none;
 }
 
-a#github-btn {
-    background-image: url(../icones/github.png);
+aside a:hover {
+    opacity: 0.7;
 }
 
 a#linkedin-btn {
@@ -324,7 +293,7 @@ a#linkedin-btn {
 
 a#instagram-btn {
     background-image: url(../icones/instagram.png);
-}
+} 
 
 footer {
     width: 100%;
