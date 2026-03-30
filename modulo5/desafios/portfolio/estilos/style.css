@@ -84,6 +84,7 @@ header {
     margin-bottom: 15px;
     background-color: var(--fundo-header);
     position: sticky;
+    z-index: 100;
     top: 0;
     left: 0;
 }
