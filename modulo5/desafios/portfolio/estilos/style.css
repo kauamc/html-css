@@ -7,56 +7,6 @@
     box-sizing: border-box;
 }
 
-/* antes de começar
-    :root {
-    --cor-primaria: #682f20;
-    --cor-primaria: #AB492C;
-    --cor-primaria-escuro: #fff;
-    --cor-primaria-escuro: #fff;
-
-    --fundo-pagina: #f0f0f0;
-    --fundo-caixas: white;
-    --fundo-header: var(--cor-primaria);
-    --fundo-footer: var(--cor-primaria);
-    
-    --titulo-cor: var(--cor-primaria);
-    --texto-cor: black;
-    --titulo-fonte: 'Lexend', Arial, Helvetica, sans-serif;
-    --texto-fonte: 'Lexend', Arial, Helvetica, sans-serif;
-    --h1-tamanho: 1.5em;
-    --h2-tamanho: 1.2em;
-    --texto-tamanho: 1em;
-
-    --header-icones: white;
-    --aside-icones: var(--cor-primaria);
-    }
-*/
-
-/* processo 1 - tema claro e cor primaria ajustada
-    :root {
-    --cor-primaria: #AB492C;
-    --cor-secundaria: #682f20;
-    --cor-primaria-escuro: #fff;
-    --cor-primaria-escuro: #fff;
-
-    --fundo-pagina: #f0f0f0;
-    --fundo-caixas: white;
-    --fundo-header: var(--cor-primaria);
-    --fundo-footer: var(--cor-primaria);
-    
-    --titulo-cor: var(--cor-primaria);
-    --texto-cor: black;
-    --titulo-fonte: 'Lexend', Arial, Helvetica, sans-serif;
-    --texto-fonte: 'Lexend', Arial, Helvetica, sans-serif;
-    --h1-tamanho: 1.5em;
-    --h2-tamanho: 1.2em;
-    --texto-tamanho: 1em;
-
-    --header-icones: white;
-    --aside-icones: var(--cor-primaria);
-    }
-*/
-
 :root {
     --cor-primaria: #AB492C;
     --cor-secundaria: #682f20;
@@ -104,7 +54,11 @@ html.tema-escuro {
 }
 
 html {
-    scroll-padding-top: 70px;
+    scroll-padding-top: 85px;
+}
+
+body, header, main, footer, section, div, p, h1, h2, h3, i {
+    transition: background-color .3s ease, color .3s ease;
 }
 
 body {
@@ -145,6 +99,11 @@ header ul {
     gap: 30px;
 }
 
+header li {
+    display: flex;
+    align-items: center;
+}
+
 header a {
     display: block;
 }
@@ -160,6 +119,15 @@ header a:active {
 header i.material-icons {
     font-size: 1.8em;
     color: var(--header-icones);
+}
+
+header button {
+    font-size: 1em;
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
 }
 
 /* Main */
@@ -382,4 +350,5 @@ footer {
 
 footer p {
     color: var(--texto-footer-cor);
+    font-size: 0.8em;
 }
