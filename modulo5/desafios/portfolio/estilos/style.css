@@ -55,6 +55,7 @@ html.tema-escuro {
 
 html {
     scroll-padding-top: 85px;
+    scroll-behavior: smooth;
 }
 
 body, header, main, footer, section, div, p, h1, h2, h3, i {
